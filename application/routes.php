@@ -36,7 +36,12 @@ return array(
 
 	'GET /' => function()
 	{
-		return View::make('home.index');
-	},
+    //$view = View::make('home.index');
+    //return $view;
+    //return View::make('partials.content');
+    $view =  View::of_home();
+    $view->content = View::make('partials.content');
+    return $view;
+  },
 
 );

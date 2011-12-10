@@ -1,0 +1,3 @@
+application/config/local/*
+application/config/database.php
+application/storage/*
